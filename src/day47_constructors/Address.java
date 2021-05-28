@@ -6,6 +6,23 @@ public class Address {
     private String state;
     private String zipCode;
     private String country  = "USA";
+    //constructor
+    public Address () {
+        System.out.println("ADDRESS CONSTRUCTOR ");
+        street = "123 unknown street";
+        city = "unknown";
+        state = "unknown";
+        zipCode ="00000";
+
+    }
+    //second constructor  overloaded constructor ,provides shortcut to intialize variables
+   public Address (String street,String city,String state,String zipCode ) {
+        setStreet(street) ;
+        this .city= city;
+        this.state= state;
+        this.zipCode = zipCode ;
+
+   }
 
     public String getStreet() {
         return street;
@@ -20,9 +37,12 @@ public class Address {
     }
 
     public void setCity(String city) {
-        this.city = city;
+        if (street.isEmpty() || street.length() > 50) {
+            System.out.println("Error Invalid street ");
+        } else {
+            this.city = city;
+        }
     }
-
     public String getState() {
         return state;
     }
