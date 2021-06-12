@@ -15,4 +15,8 @@ public class Discord extends MobileApp  {
         super.download();
         return true;
     }
+    public void printInfo () {
+        System.out.println("App Name = " + getName() );
+        System.out.println("App Version = " +getVersion() );
+    }
 }
