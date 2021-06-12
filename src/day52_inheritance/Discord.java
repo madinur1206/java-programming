@@ -9,4 +9,10 @@ public class Discord extends MobileApp  {
       super.UseTheApp(minutes ) ;
       chat("Elshat") ;
     }
+    @Override
+     public boolean download () {
+        System.out.println(" Downloaded Discord  0.0.23 from App store");
+        super.download();
+        return true;
+    }
 }

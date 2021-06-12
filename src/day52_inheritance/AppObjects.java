@@ -5,13 +5,16 @@ public class AppObjects {
         MobileApp  mobileApp = new MobileApp() ;
         mobileApp .name = "Youtube";
         mobileApp.UseTheApp(10) ;
+        mobileApp .download() ;
 
         Instagram instagram= new Instagram() ;
         instagram .name="Instagram";
         instagram .UseTheApp(20) ;
+        instagram .download();
 
         Discord  discord= new Discord() ;
         discord.name= "Discord";
         discord.UseTheApp(35) ;
+        discord.download() ;
     }
 }
