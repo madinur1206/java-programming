@@ -18,6 +18,25 @@ public class CarObjects  {
         }else {
             System.out.println("purchasing : "+ ec1.toString() );
         }
+        System.out.println(ElectricCar .getCount() );
+
+        ElectricCar  ec2= new ElectricCar("Tesla","CyberTruck",69900.0,2022,300) ;
+        System.out.println(ec2.toString() );
+        System.out.println("count = "+ElectricCar.getCount() );
+
+        Roadster roadster = new Roadster("Roadster",200000,2022,620) ;
+        System.out.println(roadster .toString() );
+        roadster .drive(1000) ;
+        roadster .drive(600) ;
+        System.out.println(roadster .getCount());
+
+        ModelX modelx= new ModelX("ModelX", 89990.0,2021,360) ;
+        System.out.println(modelx.toString() );
+        modelx .drive(10) ;
+        System.out.println("Having lunch....");
+        modelx .drive(10);
+        System.out.println("remaining range = " +modelx .getRange() );
+        System.out.println("total electric car counts = "+ ElectricCar .getCount() );
     }
 
 }
